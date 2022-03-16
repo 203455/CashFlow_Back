@@ -22,15 +22,19 @@ public class IndicadorEfectivo {
     @Column(name = "NSemana")
     private int semana;
 
+    @Column(name = "Mes")
+    private  String mes;
+
 
     public  IndicadorEfectivo(){}
 
-    public IndicadorEfectivo(int indicadorId, String tipoCuenta, String razonSocial, Double monto, int semana) {
+    public IndicadorEfectivo(int indicadorId, String tipoCuenta, String razonSocial, Double monto, int semana, String mes) {
         this.indicadorId = indicadorId;
         this.tipoCuenta = tipoCuenta;
         this.razonSocial = razonSocial;
         this.monto = monto;
         this.semana = semana;
+        this.mes = mes;
     }
 
     public int getIndicadorId() {
@@ -71,5 +75,13 @@ public class IndicadorEfectivo {
 
     public void setSemana(int semana) {
         this.semana = semana;
+    }
+
+    public String getMes() {
+        return mes;
+    }
+
+    public void setMes(String mes) {
+        this.mes = mes;
     }
 }

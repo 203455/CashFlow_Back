@@ -13,4 +13,5 @@ public interface IndicadorEfectivoRepository extends CrudRepository<IndicadorEfe
 
     public List<IndicadorEfectivo> findAll();
 
+    List<IndicadorEfectivo> findAllByMes(String mes);
 }

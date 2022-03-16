@@ -4,10 +4,7 @@ import  com.example.CashFlowBack.model.IndicadorEfectivo;
 import com.example.CashFlowBack.model.Usuario;
 import  com.example.CashFlowBack.repository.IndicadorEfectivoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,4 +29,10 @@ public class IndicadorEfectivoController {
     public IndicadorEfectivo saveIndicador(@RequestBody IndicadorEfectivo indicadorEfectivo){
         return  indicadorEfectivoRepository.save(indicadorEfectivo);
     }
+
+    @GetMapping(value = "/indicador_efectivo/{mes}")
+    public List<IndicadorEfectivo> getByMes(@PathVariable("mes") String mes){
+        return indicadorEfectivoRepository.findAllByMes(mes);
+    }
 }
+
