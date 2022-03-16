@@ -10,7 +10,7 @@ public interface FlujoEfectivoRepository extends CrudRepository<FlujoEfectivo,St
 
     List<FlujoEfectivo> findAllByMes(String mes);
 
-    FlujoEfectivo findByFlujoEfectivoId(int id_flujo);
+    FlujoEfectivo findByIdFlujo(int idFlujo);
 
     FlujoEfectivo save(FlujoEfectivo flujoEfectivo);
 }
