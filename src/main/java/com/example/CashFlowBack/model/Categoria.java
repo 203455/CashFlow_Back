@@ -8,7 +8,7 @@ public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_Categoria;
+    private int idCategoria;
 
     @Column(name = "Categoria")
     private String categoria;
@@ -22,19 +22,19 @@ public class Categoria {
     public Categoria() {
     }
 
-    public Categoria(int id_Categoria, String categoria, String subCategoria, String clasificacion) {
-        this.id_Categoria=id_Categoria;
+    public Categoria(int idCategoria, String categoria, String subCategoria, String clasificacion) {
+        this.idCategoria=idCategoria;
         this.categoria=categoria;
         this.subCategoria=subCategoria;
         this.clasificacion=clasificacion;
     }
 
-    public int getId_Categoria() {
-        return id_Categoria;
+    public int getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setId_Categoria(int id_Categoria) {
-        this.id_Categoria = id_Categoria;
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
     public String getCategoria() {

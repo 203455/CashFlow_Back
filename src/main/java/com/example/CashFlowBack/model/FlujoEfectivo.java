@@ -10,7 +10,7 @@ public class FlujoEfectivo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_flujo;
+    private int idFlujo;
 
     @Column(name = "FlowType")
     private String flowType;
@@ -33,9 +33,9 @@ public class FlujoEfectivo {
     private Categoria categoria;
 
 
-    public FlujoEfectivo(int id_flujo, String flowType, int date, String description, double amount, Categoria categoria,
+    public FlujoEfectivo(int idFlujo, String flowType, int date, String description, double amount, Categoria categoria,
                         String mes) {
-        this.id_flujo = id_flujo;
+        this.idFlujo = idFlujo;
         this.flowType = flowType;
         this.date = date;
         this.description = description;
@@ -47,9 +47,9 @@ public class FlujoEfectivo {
     public FlujoEfectivo() {
     }
 
-    public int getId_flujo() { return id_flujo; }
+    public int getIdFlujo() { return idFlujo; }
 
-    public void setId_flujo(int id_flujo) { this.id_flujo = id_flujo; }
+    public void setIdFlujo(int id_flujo) { this.idFlujo = idFlujo; }
 
     public String getFlowType() { return flowType; }
 
