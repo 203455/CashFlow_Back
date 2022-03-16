@@ -8,6 +8,8 @@ import java.util.List;
 public interface FlujoEfectivoRepository extends CrudRepository<FlujoEfectivo,String>{
     List<FlujoEfectivo> findAll();
 
+    List<FlujoEfectivo> findAllByMes(String mes);
+
     FlujoEfectivo findByFlujoEfectivoId(int id_flujo);
 
     FlujoEfectivo save(FlujoEfectivo flujoEfectivo);
