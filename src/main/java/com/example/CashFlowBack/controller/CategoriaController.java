@@ -22,7 +22,7 @@ public class CategoriaController {
 
     @PostMapping(value ="/categora/id")
     public Categoria getCategoria(@RequestBody Categoria categoria){
-        return categoriaRepository.findByIdCategoria(categoria.getIdCategoria());
+        return categoriaRepository.findByIdcategoria(categoria.getIdcategoria());
     }
 
     @PostMapping(value ="/categoria/add")
