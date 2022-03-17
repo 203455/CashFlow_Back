@@ -5,14 +5,14 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "flujoEfectivo")
+@Table(name = "flujo_efectivo")
 public class FlujoEfectivo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFlujo;
 
-    @Column(name = "flowType")
+    @Column(name = "flow_type")
     private String flowType;
 
     @Column(name = "date")
