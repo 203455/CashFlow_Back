@@ -13,7 +13,7 @@ public class Categoria {
     @Column(name = "categoria")
     private String categoria;
 
-    @Column(name = "subcategoria")
+    @Column(name = "sub_categoria")
     private String subCategoria;
 
     @Column(name = "clasificacion")
