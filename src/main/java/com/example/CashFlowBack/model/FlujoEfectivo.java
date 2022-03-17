@@ -16,7 +16,7 @@ public class FlujoEfectivo {
     private String flowType;
 
     @Column(name = "Date")
-    private int date;
+    private String date;
 
     @Column(name = "Description")
     private String description;
@@ -29,11 +29,11 @@ public class FlujoEfectivo {
 
     @JsonBackReference
     @ManyToOne (fetch = FetchType.LAZY, optional = false)
-    @JoinColumn (name = "id_categoria", nullable = false)
+    @JoinColumn (name = "IdCategoria", nullable = false)
     private Categoria categoria;
 
 
-    public FlujoEfectivo(int idFlujo, String flowType, int date, String description, double amount, Categoria categoria,
+    public FlujoEfectivo(int idFlujo, String flowType, String date, String description, double amount, Categoria categoria,
                         String mes) {
         this.idFlujo = idFlujo;
         this.flowType = flowType;
@@ -49,15 +49,15 @@ public class FlujoEfectivo {
 
     public int getIdFlujo() { return idFlujo; }
 
-    public void setIdFlujo(int id_flujo) { this.idFlujo = idFlujo; }
+    public void setIdFlujo(int idFlujo) { this.idFlujo = idFlujo; }
 
     public String getFlowType() { return flowType; }
 
     public void setFlowType(String flowType) { this.flowType = flowType; }
 
-    public int getDate() { return date; }
+    public String getDate() { return date; }
 
-    public void setDate(int date) { this.date = date; }
+    public void setDate(String date) { this.date = date; }
 
     public String getDescription() { return description; }
 
