@@ -10,13 +10,13 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idCategoria;
 
-    @Column(name = "Categoria")
+    @Column(name = "categoria")
     private String categoria;
 
-    @Column(name = "SubCategoria")
+    @Column(name = "subCategoria")
     private String subCategoria;
 
-    @Column(name = "Clasificacion")
+    @Column(name = "clasificacion")
     private String clasificacion;
 
     public Categoria() {

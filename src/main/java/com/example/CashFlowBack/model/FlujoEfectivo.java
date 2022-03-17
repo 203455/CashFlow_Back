@@ -12,24 +12,24 @@ public class FlujoEfectivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFlujo;
 
-    @Column(name = "FlowType")
+    @Column(name = "flowType")
     private String flowType;
 
-    @Column(name = "Date")
+    @Column(name = "date")
     private String date;
 
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "Amount")
+    @Column(name = "amount")
     private double amount;
 
-    @Column(name = "Month")
+    @Column(name = "month")
     private String mes;
 
     @JsonBackReference
     @ManyToOne (fetch = FetchType.LAZY, optional = false)
-    @JoinColumn (name = "IdCategoria", nullable = false)
+    @JoinColumn (name = "idCategoria", nullable = false)
     private Categoria categoria;
 
 
