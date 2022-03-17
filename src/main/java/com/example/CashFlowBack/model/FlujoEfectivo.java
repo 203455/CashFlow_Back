@@ -49,7 +49,7 @@ public class FlujoEfectivo {
 
     public int getIdFlujo() { return idFlujo; }
 
-    public void setIdFlujo(int id_flujo) { this.idFlujo = idFlujo; }
+    public void setIdFlujo(int idFlujo) { this.idFlujo = idFlujo; }
 
     public String getFlowType() { return flowType; }
 
