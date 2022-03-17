@@ -10,16 +10,16 @@ public class IndicadorEfectivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int IdIndicador;
 
-    @Column(name = "TipoCuenta")
+    @Column(name = "tipoCuenta")
     private String tipoCuenta;
 
-    @Column(name = "RazonSocial")
+    @Column(name = "razonSocial")
     private String razonSocial;
 
-    @Column(name = "Monto")
+    @Column(name = "monto")
     private Double monto;
 
-    @Column(name = "NSemana")
+    @Column(name = "nSemana")
     private int semana;
 
     @Column(name = "Mes")
