@@ -27,24 +27,21 @@ public class FlujoEfectivo {
     @Column(name = "month")
     private String mes;
 
-    @JsonBackReference
-    @ManyToOne (fetch = FetchType.LAZY, optional = false)
-    @JoinColumn (name = "idcategoria", nullable = false)
-    private Categoria categoria;
+    @Column(name = "idcategoria")
+    private int idcategoria;
 
+    public FlujoEfectivo() {
+    }
 
-    public FlujoEfectivo(int idFlujo, String flowType, String date, String description, double amount, Categoria categoria,
-                        String mes) {
+    public FlujoEfectivo(int idFlujo, String flowType, String date, String description, double amount,
+                         String mes, int idcategoria) {
         this.idFlujo = idFlujo;
         this.flowType = flowType;
         this.date = date;
         this.description = description;
         this.amount = amount;
-        this.categoria = categoria;
         this.mes = mes;
-    }
-
-    public FlujoEfectivo() {
+        this.idcategoria = idcategoria;
     }
 
     public int getIdFlujo() { return idFlujo; }
@@ -67,11 +64,11 @@ public class FlujoEfectivo {
 
     public void setAmount(double amount) { this.amount = amount; }
 
-    public Categoria getCategoria() { return categoria; }
-
-    public void setCategoria(Categoria categoria) { this.categoria = categoria; }
-
     public String getMes() { return mes; }
 
     public void setMes(String mes) { this.mes = mes; }
+
+    public int getIdcategoria() { return idcategoria; }
+
+    public void setIdcategoria(int idcategoria) { this.idcategoria = idcategoria; }
 }
