@@ -4,22 +4,22 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "indicador_efectivo")
+@Table(name = "indicadorefectivo")
 public class IndicadorEfectivo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int IdIndicador;
 
-    @Column(name = "tipo_cuenta")
+    @Column(name = "tipocuenta")
     private String tipoCuenta;
 
-    @Column(name = "razon_social")
+    @Column(name = "razonsocial")
     private String razonSocial;
 
     @Column(name = "monto")
     private Double monto;
 
-    @Column(name = "n_semana")
+    @Column(name = "nsemana")
     private int semana;
 
     @Column(name = "mes")
