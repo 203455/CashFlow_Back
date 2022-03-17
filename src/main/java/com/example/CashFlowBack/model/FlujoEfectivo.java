@@ -12,7 +12,7 @@ public class FlujoEfectivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFlujo;
 
-    @Column(name = "flow_type")
+    @Column(name = "flowtype")
     private String flowType;
 
     @Column(name = "date")
@@ -29,7 +29,7 @@ public class FlujoEfectivo {
 
     @JsonBackReference
     @ManyToOne (fetch = FetchType.LAZY, optional = false)
-    @JoinColumn (name = "id_categoria", nullable = false)
+    @JoinColumn (name = "idcategoria", nullable = false)
     private Categoria categoria;
 
 
