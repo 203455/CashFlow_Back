@@ -3,7 +3,7 @@ package com.example.CashFlowBack.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Categoria")
+@Table(name = "categoria")
 public class Categoria {
 
     @Id
