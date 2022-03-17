@@ -5,7 +5,7 @@ import com.example.CashFlowBack.model.Categoria;
 
 import java.util.List;
 
-public interface CategoriaRepository extends CrudRepository<Categoria,String> {
+public interface CategoriaRepository extends CrudRepository<Categoria, Integer> {
     List<Categoria> findAll();
 
     Categoria findByIdCategoria(int idCategoria);
