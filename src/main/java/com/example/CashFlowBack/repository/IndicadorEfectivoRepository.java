@@ -9,7 +9,6 @@ public interface IndicadorEfectivoRepository extends CrudRepository<IndicadorEfe
 
     IndicadorEfectivo save(IndicadorEfectivo indicadorEfectivo);
 
-    void deleteByIndicadorId(int indicadorId );
 
     public List<IndicadorEfectivo> findAll();
 
