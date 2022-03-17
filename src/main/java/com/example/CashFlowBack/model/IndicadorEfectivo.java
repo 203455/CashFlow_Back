@@ -8,7 +8,7 @@ import java.util.Set;
 public class IndicadorEfectivo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int indicadorId;
+    private int IdIndicador;
 
     @Column(name = "TipoCuenta")
     private String tipoCuenta;
@@ -28,8 +28,8 @@ public class IndicadorEfectivo {
 
     public  IndicadorEfectivo(){}
 
-    public IndicadorEfectivo(int indicadorId, String tipoCuenta, String razonSocial, Double monto, int semana, String mes) {
-        this.indicadorId = indicadorId;
+    public IndicadorEfectivo(int IdIndicador, String tipoCuenta, String razonSocial, Double monto, int semana, String mes) {
+        this.IdIndicador = IdIndicador;
         this.tipoCuenta = tipoCuenta;
         this.razonSocial = razonSocial;
         this.monto = monto;
@@ -37,12 +37,12 @@ public class IndicadorEfectivo {
         this.mes = mes;
     }
 
-    public int getIndicadorId() {
-        return indicadorId;
+    public int getIdIndicador() {
+        return IdIndicador;
     }
 
-    public void setIndicadorId(int indicadorId) {
-        this.indicadorId = indicadorId;
+    public void setIdIndicador(int IdIndicador) {
+        this.IdIndicador = IdIndicador;
     }
 
     public String getTipoCuenta() {
