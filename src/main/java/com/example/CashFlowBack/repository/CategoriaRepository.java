@@ -8,7 +8,7 @@ import java.util.List;
 public interface CategoriaRepository extends CrudRepository<Categoria,String> {
     List<Categoria> findAll();
 
-    Categoria findByIdcategoria(int idcategoria);
+    Categoria findByIdCategoria(int idCategoria);
 
     Categoria save(Categoria categoria);
 
