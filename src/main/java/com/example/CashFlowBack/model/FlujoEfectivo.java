@@ -16,7 +16,7 @@ public class FlujoEfectivo {
     private String flowType;
 
     @Column(name = "Date")
-    private int date;
+    private String date;
 
     @Column(name = "Description")
     private String description;
@@ -33,7 +33,7 @@ public class FlujoEfectivo {
     private Categoria categoria;
 
 
-    public FlujoEfectivo(int idFlujo, String flowType, int date, String description, double amount, Categoria categoria,
+    public FlujoEfectivo(int idFlujo, String flowType, String date, String description, double amount, Categoria categoria,
                         String mes) {
         this.idFlujo = idFlujo;
         this.flowType = flowType;
@@ -55,9 +55,9 @@ public class FlujoEfectivo {
 
     public void setFlowType(String flowType) { this.flowType = flowType; }
 
-    public int getDate() { return date; }
+    public String getDate() { return date; }
 
-    public void setDate(int date) { this.date = date; }
+    public void setDate(String date) { this.date = date; }
 
     public String getDescription() { return description; }
 
