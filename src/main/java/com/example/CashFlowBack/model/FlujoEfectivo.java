@@ -29,7 +29,7 @@ public class FlujoEfectivo {
 
     @JsonBackReference
     @ManyToOne (fetch = FetchType.LAZY, optional = false)
-    @JoinColumn (name = "id_categoria", nullable = false)
+    @JoinColumn (name = "IdCategoria", nullable = false)
     private Categoria categoria;
 
 
