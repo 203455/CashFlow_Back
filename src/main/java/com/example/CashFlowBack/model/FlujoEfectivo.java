@@ -12,7 +12,7 @@ public class FlujoEfectivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFlujo;
 
-    @Column(name = "flowType")
+    @Column(name = "flow_type")
     private String flowType;
 
     @Column(name = "date")
