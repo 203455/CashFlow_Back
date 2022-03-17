@@ -12,7 +12,7 @@ public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idCategoria;
+    private int idcategoria;
 
     @Column(name = "categoria")
     private String categoria;
@@ -30,12 +30,13 @@ public class Categoria {
     public Categoria() {
     }
 
-    public int getIdCategoria() {
-        return idCategoria;
+
+    public int getIdcategoria() {
+        return idcategoria;
     }
 
-    public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
+    public void setIdcategoria(int idcategoria) {
+        this.idcategoria = idcategoria;
     }
 
     public String getCategoria() {
