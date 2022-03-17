@@ -22,7 +22,7 @@ public class IndicadorEfectivo {
     @Column(name = "n_semana")
     private int semana;
 
-    @Column(name = "Mes")
+    @Column(name = "mes")
     private  String mes;
 
 
