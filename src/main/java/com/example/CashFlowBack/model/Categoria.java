@@ -23,11 +23,14 @@ public class Categoria {
     @Column(name = "clasificacion")
     private String clasificacion;
 
-    @JsonBackReference
-    @OneToMany(mappedBy = "categoria", fetch = FetchType.LAZY, cascade = CascadeType.DETACH, orphanRemoval = false)
-    private Set<FlujoEfectivo> flujos;
-
     public Categoria() {
+    }
+
+    public Categoria(int idCategoria, String categoria, String subCategoria, String clasificacion) {
+        this.idCategoria = idCategoria;
+        this.categoria = categoria;
+        this.subCategoria = subCategoria;
+        this.clasificacion = clasificacion;
     }
 
     public int getIdCategoria() {
@@ -61,9 +64,5 @@ public class Categoria {
     public void setClasificacion(String clasificacion) {
         this.clasificacion = clasificacion;
     }
-
-    public Set<FlujoEfectivo> getFlujos() { return flujos; }
-
-    public void setFlujos(Set<FlujoEfectivo> flujos) { this.flujos = flujos; }
 
 }
