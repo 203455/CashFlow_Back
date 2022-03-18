@@ -1,10 +1,6 @@
 package com.example.CashFlowBack.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "categoria")
@@ -33,36 +29,20 @@ public class Categoria {
         this.clasificacion = clasificacion;
     }
 
-    public int getIdCategoria() {
-        return idCategoria;
-    }
+    public int getIdCategoria() { return idCategoria; }
 
-    public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
-    }
+    public void setIdCategoria(int idCategoria) { this.idCategoria = idCategoria; }
 
-    public String getCategoria() {
-        return categoria;
-    }
+    public String getCategoria() { return categoria; }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
+    public void setCategoria(String categoria) { this.categoria = categoria; }
 
-    public String getSubCategoria() {
-        return subCategoria;
-    }
+    public String getSubCategoria() { return subCategoria; }
 
-    public void setSubCategoria(String subCategoria) {
-        this.subCategoria = subCategoria;
-    }
+    public void setSubCategoria(String subCategoria) { this.subCategoria = subCategoria; }
 
-    public String getClasificacion() {
-        return clasificacion;
-    }
+    public String getClasificacion() { return clasificacion; }
 
-    public void setClasificacion(String clasificacion) {
-        this.clasificacion = clasificacion;
-    }
+    public void setClasificacion(String clasificacion) { this.clasificacion = clasificacion; }
 
 }
