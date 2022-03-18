@@ -3,7 +3,7 @@ package com.example.CashFlowBack.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Banco")
+@Table(name = "banco")
 public class Banco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
