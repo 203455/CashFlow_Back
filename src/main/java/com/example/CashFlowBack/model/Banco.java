@@ -9,9 +9,6 @@ public class Banco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int IdBanco;
 
-    @Column(name = "tipocuenta")
-    private String tipoCuenta;
-
     @Column(name = "descripcion")
     private String descripcion;
 
@@ -27,9 +24,8 @@ public class Banco {
     public Banco() {
     }
 
-    public Banco(int idBanco, String tipoCuenta, String descripcion, Double monto, int semana, String mes) {
+    public Banco(int idBanco, String descripcion, Double monto, int semana, String mes) {
         IdBanco = idBanco;
-        this.tipoCuenta = tipoCuenta;
         this.descripcion = descripcion;
         this.monto = monto;
         this.semana = semana;
@@ -39,10 +35,6 @@ public class Banco {
     public int getIdBanco() { return IdBanco; }
 
     public void setIdBanco(int idBanco) { IdBanco = idBanco; }
-
-    public String getTipoCuenta() { return tipoCuenta; }
-
-    public void setTipoCuenta(String tipoCuenta) { this.tipoCuenta = tipoCuenta; }
 
     public String getDescripcion() { return descripcion; }
 
