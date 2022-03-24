@@ -18,7 +18,7 @@ public class CategoriaController {
         return categoriaRepository.findAll();
     }
 
-    @PostMapping(value ="/categora/id")
+    @GetMapping(value ="/categora/id")
     public Categoria getCategoria(@RequestBody Categoria categoria){
         return categoriaRepository.findByIdCategoria(categoria.getIdCategoria());
     }
