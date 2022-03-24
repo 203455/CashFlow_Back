@@ -1,6 +1,7 @@
 package com.example.CashFlowBack.controller;
 
 import com.example.CashFlowBack.model.FlujoEfectivo;
+import com.example.CashFlowBack.model.IndicadorEfectivo;
 import com.example.CashFlowBack.repository.FlujoEfectivoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,5 +23,10 @@ public class FlujoEfectivoController {
     @PostMapping(value ="/flujoEfectivo/add")
     public FlujoEfectivo addflujoEfectivo(@RequestBody FlujoEfectivo flujoEfectivo){
         return flujoEfectivoRepository.save(flujoEfectivo);
+    }
+
+    @GetMapping(value = "/flujoEfectivo/{mes}")
+    public List<FlujoEfectivo> getByMes(@PathVariable("mes") String mes){
+        return flujoEfectivoRepository.findAllByMes(mes);
     }
 }
