@@ -9,6 +9,7 @@ public interface IndicadorEfectivoRepository extends CrudRepository<IndicadorEfe
 
     IndicadorEfectivo save(IndicadorEfectivo indicadorEfectivo);
 
+    List<IndicadorEfectivo> findAllBySemana(Integer semana);
 
     public List<IndicadorEfectivo> findAll();
 

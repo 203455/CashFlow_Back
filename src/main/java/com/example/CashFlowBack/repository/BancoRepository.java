@@ -12,4 +12,6 @@ public interface BancoRepository extends CrudRepository<Banco, String> {
     public List<Banco> findAll();
 
     List<Banco> findAllByMes(String mes);
+
+    List<Banco> findAllBySemana(Integer semana);
 }

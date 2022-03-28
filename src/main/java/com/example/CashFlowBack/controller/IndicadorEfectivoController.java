@@ -26,6 +26,11 @@ public class IndicadorEfectivoController {
         }
     }
 
+    @GetMapping(value = "/indicador_efectivo/semana/{semana}")
+    public List<IndicadorEfectivo> getBySemana(@PathVariable("semana") Integer semana){
+        return indicadorEfectivoRepository.findAllBySemana(semana);
+    }
+
     @PostMapping(value = "/indicador_efectivo/save")
     public IndicadorEfectivo saveIndicador(@RequestBody IndicadorEfectivo indicadorEfectivo){
         return  indicadorEfectivoRepository.save(indicadorEfectivo);

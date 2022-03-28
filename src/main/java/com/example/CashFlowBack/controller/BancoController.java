@@ -24,6 +24,11 @@ public class BancoController {
         }
     }
 
+    @GetMapping(value = "/banco/semana/{semana}")
+    public List<Banco> getBySemana(@PathVariable("semana") Integer semana){
+        return bancoRepository.findAllBySemana(semana);
+    }
+
     @PostMapping(value = "/banco/save")
     public Banco saveIndicador(@RequestBody Banco banco){
         return  bancoRepository.save(banco);
